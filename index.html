@@ -1,15 +1,33 @@
----
-title: 首頁
-layout: ./app/layout.ejs
-engine: ejs
-current: index
----
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>首頁</title>
+  <link rel="stylesheet" href="./assets/style/all.css">
+</head>
+
 <body>
+  <header class="header" data-aos="fade-up">
+    <h1>
+      <a href="./index.html"></a>
+    </h1>
+    <ul class="menu">
+      <li><a href="#">系列鏡框</a></li>
+      <li><a href="#">門市據點</a></li>
+      <li><a href="#">部落格</a></li>
+      <li><a href="faq.html">常見問題</a></li>
+    </ul>
+  </header>
+
+  <body>
   <div class="main">
     <div class="banner">
-      <p class="slogan">Promise-Desert 2020 早春系列<span>看得清，才能看得遠</span></p>
+      <p class="slogan" data-aos="flip-left">Promise-Desert 2020 早春系列<span>看得清，才能看得遠</span></p>
     </div>
-    <div class="work container p-60-80">
+    <div class="work container p-60-80" data-aos="fade-up">
       <div class="h2">用專業的心，做專業的事</div>
       <ul class="df">
         <li class="cart">
@@ -35,9 +53,9 @@ current: index
       </ul>
     </div>
     <div class="classic container p-60-80 df fx-w-w">
-      <div class="h2">經典系列鏡框</div>
+      <div class="h2" data-aos="fade-up">經典系列鏡框</div>
       <ul>
-        <li class="cart">
+        <li class="cart" data-aos="fade-up">
           <a class="df" href="#">
             <img class="product" src="https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/product-1.png?raw=true" alt="product-1">
             <div class="icon item1">
@@ -46,7 +64,7 @@ current: index
             </div>
           </a>
         </li>
-        <li class="cart">
+        <li class="cart" data-aos="fade-up">
           <a class="df" href="#">
             <img class="product" src="https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/product-2.png?raw=true" alt="product-2">
             <div class="icon item2">
@@ -55,7 +73,7 @@ current: index
             </div>
           </a>
         </li>
-        <li class="cart">
+        <li class="cart" data-aos="fade-up">
           <a class="df" href="#">
             <img class="product" src="https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/product-3.png?raw=true" alt="product-3">
             <div class="icon item3">
@@ -68,8 +86,8 @@ current: index
     </div>
     <div class="co-branding p-60-80">
       <div class="container">
-        <div class="h2 mb-5">聯名設計鏡框</div>
-      <ul class="box df jcc">
+        <div class="h2 mb-5" data-aos="fade-up">聯名設計鏡框</div>
+      <ul class="box df jcc" data-aos="fade-up">
         <li class="doubleA">
           <a class="df-c-c"href="#">Double A+</a>
         </li>
@@ -81,8 +99,8 @@ current: index
     </div>
     <div class="recommoned">
       <div class="container p-60-80">
-        <div class="h2">顧客推薦</div>
-        <ul class="df mt-5">
+        <div class="h2" data-aos="fade-up">顧客推薦</div>
+        <ul class="df mt-5" data-aos="fade-up">
           <li class="cart pb-2">
             <img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/rec-1.png?raw=true" alt="rec-1">
             <div class="message df fd-c jcsb pt-2 pb-2 pl-2">
@@ -127,7 +145,7 @@ current: index
       </div>
     </div>
     <div class="contactUs">
-      <div class="container p-60-80">
+      <div class="container p-60-80" data-aos="fade-up">
         <form action="">
           <div class="h2">
             聯絡我們
@@ -159,3 +177,74 @@ current: index
     </div>
   </div>
 </body>
+
+  <footer class="footer">
+    <div class="mobilWrap">
+      <div class="footerMenu">
+        <ul class="list" data-aos="fade-up">
+          <li><a href="index.html">首頁</a></li>
+          <li><a href="#">系列鏡框</a></li>
+          <li><a href="#">門市據點</a></li>
+          <li><a href="#">部落格</a></li>
+          <li><a href="faq.html">常見問題</a></li>
+        </ul>
+        <ul class="icon" data-aos="fade-up">
+          <li><a href="#"><img src="assets/images/icon-fb.svg" alt="fb"></a></li>
+          <li><a href="#"><img src="assets/images/icon-ig.svg" alt="ig"></a></li>
+          <li><a href="#"><img src="assets/images/icon-line.svg" alt="line"></a></li>
+        </ul>
+      </div>
+      <div class="footerTel" data-aos="fade-up">
+        <div class="phone">
+          <a href="#">
+            <img src="assets/images/icon-phone.svg" alt="phone">
+            <p>0800-000-000</p>
+          </a>
+        </div>
+        <div class="mail">
+          <a href="#">
+            <img src="assets/images/icon-mail.svg" alt="mail"> 
+            <p>glasses@business.com</p>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="footerCc" data-aos="fade-up">
+      <p>Copyright © 2020 Glasses.All rights reserved.</p>
+      <div class="rP">
+        <p>隱私權政策</p>
+        <p>服務條款</p>
+      </div>
+    </div>
+  </footer>
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+  AOS.init({
+  // Global settings:
+  disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+  startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
+  initClassName: 'aos-init', // class applied after initialization
+  animatedClassName: 'aos-animate', // class applied on animation
+  useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+  disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+  debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+  throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+  
+
+  // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+  offset: 300, // offset (in px) from the original trigger point
+  delay: 0, // values from 0 to 3000, with step 50ms
+  duration: 400, // values from 0 to 3000, with step 50ms
+  easing: 'ease', // default easing for AOS animations
+  once: false, // whether animation should happen only once - while scrolling down
+  mirror: false, // whether elements should animate out while scrolling past them
+  anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+
+});
+  </script>
+  <script src="./assets/js/vendors.js"></script>
+  <script src="./assets/js/all.js"></script>
+</body>
+
+</html>
