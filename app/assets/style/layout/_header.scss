@@ -1,0 +1,70 @@
+.header{
+    font-size: $font-l;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: auto;
+    background-color: $secondary;
+    padding: 30px 88px;
+    h1{
+        a{
+            background: url(../images/logo.png);
+            background-size: cover;
+            width:80px;
+            height:49px;
+            display: block;
+            text-indent: 101%;
+            overflow: hidden;
+            white-space: nowrap;
+        }
+    }
+    ul{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        li{
+            margin-left: 64px;
+            a{
+                color: $white;
+            }    
+        }
+        
+    }
+}
+
+//pad
+@include pad{
+    .header{
+        padding: 30px 39px;
+    }
+}
+
+//mobil
+@include mobil{
+    .header{
+        flex-wrap: wrap;
+        padding: 0;
+        h1{
+            width: 100%;
+            margin: 10px auto;
+            a{
+                margin: 0 auto;
+                width: 48px;
+                height: 29px;
+            }
+        }
+        ul{
+            width: 100%;
+            li{
+                width: 50%;
+                text-align: center;
+                padding: 8px 0;
+                border: 1px solid #fff;
+                margin: 0;
+            }
+            
+        }
+    }
+}
+
+

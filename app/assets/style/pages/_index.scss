@@ -1,0 +1,401 @@
+.banner{
+    height: 840px;
+    background-image: url(https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/banner.png?raw=true);
+    @include pad{
+        background-image: url(https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/banner-sm.png?raw=true);
+    }
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    
+    .slogan{
+        color: $primary;
+        font-size: $font-xl;
+        @include pad{
+            font-size: $font-l;
+            font-weight: medium;
+            @include mobil{
+                font-size: $font-1;
+                font-weight: bold;
+            }
+        }
+        width: 576px;
+        @include mobil{
+            width: 400px;
+        }
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        span{
+            font-size: $font-4;
+            font-weight: bold;
+            @include pad{
+                font-size: $font-3;
+                @include mobil{
+                    font-size: $font-2;
+                }
+            }
+        }
+        margin-right: 21%;
+        @include pad{
+            margin-right: 5%;
+            margin-top: 20%;
+            @include mobil{
+                margin-top: 0%;
+            }
+        }
+    }
+}
+.h2{
+    font-size: $font-3;
+    font-weight: bold;
+    @include pad{
+        font-size: $font-2;
+        font-weight: bold;
+        @include mobil{
+            font-size: $font-ll;
+        }
+    }
+}
+.work{
+    background-color: $thirdColor;
+    @include pad{
+        padding-left: 10%;
+        padding-right: 10%;
+        @include mobil{
+            padding-left: 16%;
+            padding-right: 16%;
+        }
+    }
+    color: $primary;
+    text-align: center;
+    .h2{
+        margin-bottom: 48px;
+        @include pad{
+            margin-bottom: 40px;
+        }
+    }
+    ul{
+        justify-content: center;
+        align-items: flex-start;//消除間隙
+        @include pad{
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        
+        .cart{
+            width: 255px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-right: 30px;
+            img{
+                width: 100px;
+                height: 100px;
+                margin-bottom: 24px;
+            }
+            .h3{
+                width: 100%;
+                font-size: $font-ll;
+                font-weight: bold;
+                margin-bottom: 8px;
+            
+            }
+            p{
+                text-align: left;
+                color: #000;
+                font-size: $font-1;
+            }
+            @include pad{
+                .h3{
+                    font-size: $font-ll;
+                }
+                padding-bottom: 20px;
+            }
+        }
+    }
+    
+}
+
+.classic{
+    @include mobil{
+        flex-direction: column;
+        padding-left: 4%;
+        padding-right: 4%;
+    }
+    .h2{
+        width: 100%;
+        margin-bottom: 8px;
+        color: $primary;
+        font-weight: bold;
+        @include pad{
+            margin-bottom: 24px;
+        }
+    }
+    ul{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        .cart{
+            width: 100%;
+            display: flex;
+            @include mobil{
+                align-items: center;
+                position: relative;
+                
+            }
+            .product{
+                width: 60%;
+                margin-top: 32px;
+                margin-right: 32px;
+                vertical-align:text-top;
+                @include pad{
+                    margin-top: 8px;
+                    @include mobil{
+                        width: 100%;
+                        margin-right: 0;
+                    }
+                }
+            }
+            .icon{
+                display: flex;
+                align-items: center;
+                @include mobil{
+                    position: relative;
+                    right: 60%;
+                }
+                img{
+                    width: 48px;
+                    height: 48px;
+                    margin-right: 10px;
+                    @include pad{
+                        width: 40px;
+                        height: 40px;
+                        margin-right: 8px;
+                    }
+                }
+                
+                p{
+                    font-size: $font-3;
+                    font-style: italic;
+                    font-weight: bold;
+                    color: $secondary;
+                    @include pad{
+                        font-size: $font-lll;
+                        font-weight: bold;
+                    }
+                }
+
+            }
+
+            
+        }
+    }
+    
+    
+}
+
+.cart:nth-child(2){
+    a{
+        flex-direction: row-reverse;
+        @include pad{
+            flex-direction: row;
+        }
+        p{
+            margin-right: 30px;
+        }
+    } 
+}
+
+.co-branding{
+    background-image: url(https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/bg.png?raw=true);
+    background-position: center;
+    background-size: cover;
+    color: #fff;
+    @include mobil{
+        padding-left: 4%;
+        padding-right: 4%;
+    }
+    .box{
+        color: $secondary;
+        @include mobil{
+            flex-direction: column;
+            align-items: center;
+        }
+        .doubleA{
+            background-image: url(https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/product-8.png?raw=true);
+            background-size: cover;
+            width: 540px;
+            height: 405px;
+            background-position:50% 50% ;
+            @include pad{
+                width: 330px;
+                height: 278px;
+            }
+        }
+        .youth{
+            background-image: url(https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/product-9.png?raw=true);
+            background-size: cover;
+            width: 540px;
+            height: 405px;
+            background-position:50% 50% ;
+            @include pad{
+                width: 330px;
+                height: 278px;
+                @include mobil{
+                    margin-left: 0;
+                    margin-top: 16px;
+                }
+            }
+        }
+        a{
+            width: 540px;
+            height: 405px;
+            font-size: $font-xxl;
+            font-weight: bold;
+            color: $secondary;
+            background: rgba(255,255,255,0.5);
+            @include pad{
+                width: 330px;
+                height: 278px;
+                font-size: $font-2;
+                font-weight: bold;
+            }
+        }
+        
+        a:hover{
+            background:rgba(255,255,255,0);
+        }
+    }
+
+
+}
+
+.recommoned{
+    @include pad{
+        padding-left: 39px;
+        padding-right: 39px;
+        @include mobil{
+            padding-left: 4%;
+            padding-right: 4%;
+        }
+    }
+    .h2{
+        color: $primary;
+        font-weight: bold;
+    }
+    ul{
+        @include pad{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            align-items: center;
+            li{
+                margin-left: 0px;
+            }
+            @include mobil{
+                flex-direction: column;
+                margin-top: 8px;
+            }
+        }
+        .cart{
+            border: 1px solid #DEE2E6;
+            width: 255px;
+            height: 460px;
+            @include pad{
+                width: 330px;
+                @include mobil{
+                    margin-top: 16px;
+                }
+
+            }
+            img{
+                width: 255px;
+                height: 256px;
+                @include pad{
+                    width: 330px;
+    
+                }
+            }
+            .message{
+                height: 204px;
+                .h3{
+                    text-align: left;
+                    @include pad{
+                        font-size: $font-s;
+                        p{
+                            font-size: $font-1;
+                        }
+                    }
+                }
+                .h4{
+                    text-align: left;
+                    font-size: $font-s;
+                    color: #707070;
+                }
+                @include pad{
+                    padding-left: 24px;
+                    padding-right: 24px;
+                }
+            }
+        }
+    }
+}
+
+.contactUs{
+    background: $thirdColor;
+    @include pad{
+        padding-left: 20%;
+        padding-right: 20%;
+        label {
+            font-size: $font-s;
+        }
+    }
+    form{
+        width: 730px;
+        @include pad{
+            width: 80%;
+        }
+        margin: 0 auto;
+        .h2{
+            p{
+                font-size: $font-l;
+                text-align: left;
+                @include pad{
+                    font-size: $font-1;
+                }
+            }
+        }
+        .sit{
+            input{
+                width: 100%;
+                height: 50px;
+            }
+            @include pad{
+                margin-top: 8px;
+            }
+        }
+        .checkbox{
+            @include pad{
+                text-align: left;
+                margin-top: 8px;
+            }
+        }
+        .button{
+            width: 350px;
+            height: 54px;
+            background: $secondary;
+            color: $white;
+            font-size: $font-1;
+            @include pad{
+                font-size: $font-s;
+                width: 210px;
+                height: 40px;
+            }
+            
+        }
+    }
+    
+}
